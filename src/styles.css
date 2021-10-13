@@ -1,0 +1,242 @@
+body {
+  font-family: sans-serif;
+  min-width: 375px;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  background-position: 0 0;
+}
+
+.main-header {
+  padding-top: 16px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  display: block;
+  margin-left: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.main-nav__user-wrapper {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.main-nav__user-wrapper a {
+  display: block;
+  cursor: pointer;
+}
+
+.main-nav__user-wrapper .main-nav__name-wrapper {
+  display: none;
+}
+
+.main-nav__form-wrapper {
+  position: relative;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.main-nav__form-wrapper input {
+  width: 100%;
+  min-height: 41px;
+  padding-left: 49px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  border-top: 1px solid #bbc4d6;
+}
+
+.main-nav__form-wrapper input:hover {
+  background-color: #ebebf1;
+}
+
+.main-nav__form-wrapper button {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__form-wrapper svg {
+  position: relative;
+  left: -5px;
+  top: 9px;
+}
+
+.main-page {
+  margin-top: 70px;
+  padding: 0 20px;
+  padding-bottom: 73px;
+}
+
+.main-page__wrapper h1 {
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.main-page__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.main-page__wrapper li {
+  display: flex;
+  justify-content: center;
+  width: 335px;
+  height: 140px;
+  line-height: 140px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-top: 1px solid #ebeff1;
+  border-bottom: 1px solid #ebeff1;
+}
+
+.main-page__wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  cursor: pointer;
+}
+
+.main-page__wrapper li:hover {
+  background-color: #ebebf1;
+}
+
+.main-page__wrapper img {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+
+  .main-header {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .main-nav__logo {
+    margin-left: 20px;
+  }
+
+  .main-nav__user-wrapper {
+    position: relative;
+    width: 168px;
+    height: 40px;
+    order: 3;
+  }
+
+  .main-nav__user-wrapper::before {
+    position: absolute;
+    content: "";
+
+    left: -19px;
+    top: -20px;
+
+    width: 1px;
+    height: 80px;
+    background-color: #ebebf1;
+  }
+
+  .main-nav__user-wrapper .main-nav__user {
+    display: none;
+  }
+
+  .main-nav__user-wrapper .main-nav__name-wrapper {
+    display: block;
+  }
+
+  .main-nav__name-wrapper p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #768298;
+  }
+
+  .main-nav__name-wrapper a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .main-nav__name-wrapper img {
+    display: block;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .main-nav__form-wrapper {
+    margin-top: 0;
+    width: 344px;
+    order: 2;
+  }
+
+  .main-nav__form-wrapper input {
+    min-height: 44px;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .main-nav__form-wrapper button {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main-page__wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-page__wrapper li {
+    width: 229px;
+    height: 120px;
+    line-height: 120px;
+    margin: 0 auto;
+    margin-top: 0;
+    border: 1px solid #ebeff1;
+  }
+
+  .main-page__wrapper li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+}
