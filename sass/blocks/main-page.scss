@@ -10,6 +10,7 @@
   line-height: 45px;
   font-weight: 500;
   font-style: normal;
+  font-family: $roboto;
   text-align: left;
   text-transform: uppercase;
 }
@@ -24,7 +25,7 @@
 .main-page__wrapper li {
   display: flex;
   justify-content: center;
-  width: 335px;
+  width: 100%;
   height: 140px;
   line-height: 140px;
   margin: 0 auto;
