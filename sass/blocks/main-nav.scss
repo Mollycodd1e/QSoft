@@ -1,0 +1,140 @@
+.main-nav__logo {
+  display: block;
+  align-self: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.main-nav__user-wrapper {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  padding-right: 20px;
+}
+
+.main-nav__user-wrapper a {
+  display: block;
+  cursor: pointer;
+}
+
+.main-nav__user-wrapper .main-nav__name-wrapper {
+  display: none;
+}
+
+.main-nav__form-wrapper {
+  position: relative;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.main-nav__form-wrapper input {
+  width: 100%;
+  min-height: 41px;
+  padding-left: 49px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  border-top: 1px solid #bbc4d6;
+}
+
+.main-nav__form-wrapper input:hover {
+  background-color: #ebebf1;
+}
+
+.main-nav__form-wrapper button {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__form-wrapper svg {
+  position: relative;
+  left: -5px;
+  top: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__user-wrapper {
+    position: relative;
+    width: 168px;
+    height: 40px;
+    order: 3;
+  }
+
+  .main-nav__user-wrapper::before {
+    position: absolute;
+    content: "";
+
+    left: -19px;
+    top: -20px;
+
+    width: 1px;
+    height: 80px;
+    background-color: #ebebf1;
+  }
+
+  .main-nav__user-wrapper .main-nav__user {
+    display: none;
+  }
+
+  .main-nav__user-wrapper .main-nav__name-wrapper {
+    display: block;
+  }
+
+  .main-nav__name-wrapper p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #768298;
+  }
+
+  .main-nav__name-wrapper a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .main-nav__name-wrapper img {
+    display: block;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .main-nav__form-wrapper {
+    margin-top: 0;
+    width: 344px;
+    order: 2;
+  }
+
+  .main-nav__form-wrapper input {
+    min-height: 44px;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .main-nav__form-wrapper button {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+} 
+
+@media (min-width: 1210px) {
+  .main-nav__logo {
+    margin-left: 0;
+  }
+
+  .main-nav__user-wrapper {
+    padding-right: 0;
+  }
+}
