@@ -23,7 +23,7 @@
 
 .main-nav__form-wrapper {
   position: relative;
-  margin-top: 16px;
+  margin-top: 13px;
   width: 100%;
 }
 
@@ -34,7 +34,12 @@
   padding-right: 15px;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
   border-top: 1px solid #bbc4d6;
+
+  &::placeholder {
+    color: #bbc4d6;
+  }
 }
 
 .main-nav__form-wrapper input:hover {
@@ -53,8 +58,8 @@
 
 .main-nav__form-wrapper svg {
   position: relative;
-  left: -5px;
-  top: 9px;
+  left: 0;
+  top: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,13 +68,14 @@
     width: 168px;
     height: 40px;
     order: 3;
+    margin-top: -2px;
   }
 
   .main-nav__user-wrapper::before {
     position: absolute;
     content: "";
 
-    left: -19px;
+    left: 18px;
     top: -20px;
 
     width: 1px;
@@ -89,6 +95,7 @@
     margin: 0;
     font-size: 14px;
     line-height: 17px;
+    letter-spacing: 0.01em;
     color: #768298;
   }
 
@@ -102,17 +109,20 @@
   .main-nav__name-wrapper img {
     display: block;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 13px;
   }
 
   .main-nav__form-wrapper {
     margin-top: 0;
-    width: 344px;
+    margin-left: 16px;
+    width: 44.79%;
     order: 2;
+    box-sizing: border-box;
   }
 
   .main-nav__form-wrapper input {
-    min-height: 44px;
+    min-height: 41px;
+    padding-left: 41px;
     border: 1px solid #ebebf1;
     border-radius: 5px;
     box-sizing: border-box;
@@ -127,6 +137,12 @@
     border: none;
     cursor: pointer;
   }
+
+  .main-nav__form-wrapper svg {
+    position: relative;
+    left: -11px;
+    top: 7px;
+  }
 } 
 
 @media (min-width: 1210px) {
@@ -136,5 +152,11 @@
 
   .main-nav__user-wrapper {
     padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__form-wrapper {
+    width: 763px;
   }
 }
